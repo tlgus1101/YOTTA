@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="180dp" android:id="@+id/LinearLayoutItem"
+    android:background="@drawable/border_item" android:padding="1dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_gravity="center"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:padding="1dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="3dp">
+
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/basic_text"
+            android:singleLine="true"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:singleLine="true"
+            android:textColor="@color/basic_deep_deep" />
+
+        <TextView
+            android:id="@+id/department"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="10dp"
+            android:singleLine="true"
+            android:gravity="center" />
+
+        <!--<TextView-->
+        <!--android:id="@+id/distance"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textSize="20dp" android:textStyle="bold"-->
+        <!--android:textColor="@color/dark_red" />-->
+
+
+    </LinearLayout>
+
+    <CheckBox
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:id="@+id/CheckBoxSelected"
+        android:focusable="false"
+        android:clickable="false"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"/>
+
+</LinearLayout>

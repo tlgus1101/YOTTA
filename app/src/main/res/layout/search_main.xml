@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/basic_light_light"
+        android:orientation="vertical">
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/basic">
+
+            <Button
+                android:id = "@+id/yCategoryBtn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:onClick="categoryClick" />
+
+            <!-- android:background="@drawable/category" -->
+
+            <EditText
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_width="205dp"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:imeOptions="actionSearch"
+                android:id="@+id/ediText01"/>
+            <Button
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:id = "@+id/yBtnSearch"
+                android:onClick="SearchBtn"
+                android:background="@drawable/btnsearch"/>
+            <!--  -->
+
+            <Button
+                android:layout_marginLeft="15dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:onClick="BtnMartSettingOnClick"
+                android:id="@+id/ySettingBtn"
+                />
+            <!-- android:background="@drawable/setting" -->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp">
+            <RadioGroup
+                android:orientation="horizontal"
+                android:checkedButton="@+id/radio_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+                <RadioButton
+                    android:id="@+id/radio_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="가격순"/>
+
+                <RadioButton
+                    android:id="@+id/radio_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="90dp"
+                    android:text="거리순"/>
+            </RadioGroup>
+            <TextView
+                android:id="@+id/yLastSavedDistanceTextView"
+                android:layout_marginLeft="40dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="설정없음" android:textColor="@color/dark_green"/>
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/android:list"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:dividerHeight="1dp"
+            android:background="@color/white"
+            android:divider="@color/basic" />
+    </LinearLayout>
+
+</LinearLayout>

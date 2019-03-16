@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:layout_width="320dp"
+    android:layout_height="430dp"
+    android:padding="10dp"
+    android:background="@drawable/border_info">
+
+    <!-- 해당 레이아웃은 마트 설정을 저장하기 위한 레이아웃입니다.-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="내 마트설정"
+            android:layout_marginRight="80dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/yFinishBtn"
+            android:layout_gravity="right"
+            android:text="X" android:textColor="@color/black"
+            android:textSize="15dp"
+            android:background="@drawable/border_info"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="거리설정 " android:layout_gravity="center"
+            android:textColor="@color/black"/>
+
+        <RadioGroup
+            android:orientation="horizontal"
+            android:checkedButton="@+id/radio_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/radio1KmBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1km"
+                android:textColor="@color/black"/>
+            <RadioButton
+                android:id="@+id/radio3KmBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3km"
+                android:textColor="@color/black"
+                android:onClick="Radio3KmBtnOnClcik"/>
+            <RadioButton
+                android:id="@+id/radio5KmBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5km"
+                android:textColor="@color/black"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center">
+            <Button
+                android:id="@+id/yHyperMarketBtn"
+                android:onClick="HyperMarketOnClick"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:text="대형마트" android:textColor="@color/black"
+                android:textSize="15dp"
+                android:background="@drawable/tab3"/>
+            <Button
+                android:id="@+id/yMiddleMarketBtn"
+                android:onClick="MiddleMarketOnClick"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:layout_marginLeft="20dp"
+                android:text="중형마트" android:textColor="@color/black"
+                android:textSize="15dp"
+                android:background="@drawable/tab3"/>
+            <Button
+                android:id="@+id/ySmallMarketBtn"
+                android:onClick="SmallMarketOnClick"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:padding="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center"
+                android:text="소형마트" android:textColor="@color/black"
+                android:textSize="15dp"
+                android:background="@drawable/tab3"/>
+        </LinearLayout>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp">
+            <ListView
+                android:id="@+id/yHyperMartListView"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:padding="2dp"
+                android:dividerHeight="1dp"
+                android:divider="@color/basic"
+                android:background="@drawable/border_info"/>
+            <ListView
+                android:id="@+id/yMiddleMartListView"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:padding="2dp"
+                android:dividerHeight="1dp"
+                android:divider="@color/basic"
+                android:background="@drawable/border_info"
+                android:visibility="invisible"/>
+            <ListView
+                android:id="@+id/ySmallMartListView"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:padding="2dp"
+                android:dividerHeight="1dp"
+                android:divider="@color/basic"
+                android:background="@drawable/border_info"
+                android:visibility="invisible"/>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/yInitBtn"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:text="초기화" android:textColor="@color/black"
+                android:textSize="15dp"
+                android:background="@drawable/border_category"/>
+            <Button
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:id="@+id/ySelectAllBtn"
+                android:text="전체선택" android:textColor="@color/black"
+                android:textSize="15dp"
+                android:background="@drawable/border_category"/>
+
+            <Button
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:id="@+id/ySaveBtn"
+                android:text="저장" android:textColor="@color/black"
+                android:textSize="15dp"
+                android:background="@drawable/border_category"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

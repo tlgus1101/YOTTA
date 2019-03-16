@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.leehs.yottaproject06.ForSettings.MyPageActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="18dp"
+        android:text="FAQ" android:textSize="22dp"
+        android:textAlignment="center" android:textColor="@color/white"
+        android:background="@color/basic_point"/>
+
+    <ExpandableListView
+        android:id="@+id/faqlist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:padding="10dp" android:layout_marginTop="15dp"
+        android:background="@color/white"
+        android:divider="@color/basic_dark"
+        android:childDivider="@color/basic"
+        android:dividerHeight="1dp"
+        android:drawSelectorOnTop="true"
+        android:groupIndicator="@color/white"
+        android:scrollbars="none"/>
+</LinearLayout>

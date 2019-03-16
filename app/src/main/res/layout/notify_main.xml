@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:layout_gravity="center"
+    android:background="@color/white">
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:orientation="vertical" android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@color/white">
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="210dp"
+            android:layout_height="200dp"
+            android:id="@+id/yNotifyImageView"/>
+        <!-- android:background="@drawable/logo2" -->
+
+        <TextView
+            android:id="@+id/noti_yotta"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="팀 명"
+            android:padding="5dp" android:gravity="center_horizontal"
+            android:textSize="20dp" android:textColor="@color/basic_text"
+            android:background="@color/basic"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="YOTTA"
+            android:padding="5dp" android:gravity="center_horizontal"
+            android:textSize="18dp" android:textColor="@color/basic_text" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="관리자" android:background="@color/basic"
+            android:padding="5dp" android:gravity="center_horizontal"
+            android:textSize="20dp" android:textColor="@color/basic_text" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="김종헌 최현욱 이현식\n문형운 황정화 이시현"
+            android:padding="5dp" android:gravity="center_horizontal"
+            android:textSize="18dp" android:textColor="@color/basic_text" />
+
+        <!--
+        <TextView
+            android:id="@+id/noti_call"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="연락처 : 1588-5588"
+            android:padding="5dp" android:gravity="center_horizontal"
+            android:textSize="20dp" android:textColor="@color/basic_text" />
+        -->
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="이메일"
+            android:padding="5dp" android:gravity="center_horizontal"
+            android:textSize="20dp" android:textColor="@color/basic_text"
+            android:background="@color/basic"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="yotta@google.com"
+            android:padding="5dp" android:gravity="center_horizontal"
+            android:textSize="18dp" android:textColor="@color/basic_text"/>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:id="@+id/yCallBtn"
+                android:background="@drawable/call" />
+
+            <Button
+                android:layout_marginLeft="30dp"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:id="@+id/yReportBtn"
+                android:background="@drawable/singo" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

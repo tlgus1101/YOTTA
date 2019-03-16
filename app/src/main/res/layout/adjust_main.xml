@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"     android:layout_gravity="center"
+    android:layout_width="240dp" android:layout_height="265dp"
+    android:id="@+id/yAdjustLayout"  >
+    <!-- android:background="@drawable/changeprice" -->
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="15dp"
+            android:layout_gravity="center"
+            android:id="@+id/ImageViewInDia"/>
+        <NumberPicker
+            android:layout_gravity="center|right"
+            android:id="@+id/yNumPickerInDia"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="50dp"
+            android:layout_height="90dp"
+            android:textColor ="@color/black"
+            android:background="@color/basic_dark"
+            android:solidColor="@color/basic_light" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/yTextName"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="5dp"
+        android:textSize="15dp"
+        android:text="제품"
+        android:textAlignment="center"
+        android:textColor="@color/black"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/yTextPrice"
+        android:textSize="16dp"
+        android:text="가격"
+        android:textAlignment="center"
+        android:textColor="@color/black"/>
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_marginRight="30dp"
+            android:layout_width="60dp" android:layout_height="30dp"
+            android:onClick="BtnSendOnClick"
+            android:background="@drawable/border"
+            android:text="확인" android:textSize="12dp"
+            android:textColor="@color/basic_deep_deep"/>
+
+        <Button
+            android:layout_width="60dp" android:layout_height="30dp"
+            android:id="@+id/btnCanel"
+            android:background="@drawable/border"
+            android:text="취소" android:textSize="12dp"
+            android:textColor="@color/basic_deep_deep"/>
+
+    </LinearLayout>
+</LinearLayout>

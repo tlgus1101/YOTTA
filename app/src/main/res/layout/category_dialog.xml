@@ -1,0 +1,18 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.leehs.yottaproject06.ShoppingCart.SelectActivity;"
+    android:layout_width="260dp"
+    android:layout_height="350dp"
+    android:padding="5dp"
+    android:layout_gravity="center"
+    android:background="@color/white">
+
+    <ExpandableListView
+        android:id="@+id/category_dlglist"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:divider="@color/basic_dark"
+        android:childDivider="@color/basic"
+        android:dividerHeight="1dp"/>
+</RelativeLayout>

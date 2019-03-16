@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#7fb0cd</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#4195ab</color><!--또는 268BA5-->
+    <color name="border">#A5D8F5</color>
+    <color name="basic">#C3E6F0</color>
+    <color name="basic_light">#f2ffff</color>
+    <color name="basic_light_light">#f7ffff</color>
+    <color name="basic_dark">#99D9EA</color>
+    <color name="basic_dark_dark">#469DB4</color>
+    <color name="basic_deep">#568491</color>
+    <color name="basic_deep_deep">#276171</color>
+    <color name="basic_point">#268BA5</color>
+    <color name="viewflipper">#B7DDE8</color>
+    <color name="basic_text">#2B2B2B</color>
+    <color name="gray">#d2d2d2</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="dark_red">#9e0000</color>
+    <color name="red">#FF0000</color>
+    <color name="orange">#FF8040</color>
+    <color name="dark_orange">#B63D00</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="dark_yellow">#E6B611</color>AlertDialog.Builder
+    <color name="green">#008000</color>
+    <color name="dark_green">#005800</color>
+    <color name="skyblue">#00ABD9</color>
+    <color name="seablue">#00D5D5</color>
+    <color name="blue">#0000FF</color>
+    <color name="navy">#091d76</color>
+    <color name="dark_navy">#021051</color>
+    <color name="light_purple">#7777EC</color>
+    <color name="purple">#9A27A4</color>
+    <color name="babypink">#fef7ff</color>
+    <color name="hotpink">#FF0080</color>
+</resources>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="@color/basic"
+    android:weightSum="1">
+
+    <!-- 체크박스에 이미지 넣으려면 android:button="@drawable/sin"
+            혹은 android:drawableLeft="@drawable/recoke" 활용-->
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="설정 마트 : "
+            android:textSize="20dp" android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/chooseMart"
+            android:layout_marginLeft="30dp"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/controlBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/setting"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <ListView android:layout_height="wrap_content"
+            android:layout_weight="1" android:id="@+id/ChooseListView"
+            android:layout_width="fill_parent" android:background="@drawable/border_category"
+            android:divider="@color/basic" android:dividerHeight="1dp"
+            android:padding="5dp"
+            android:clickable="true" android:choiceMode="multipleChoice" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginRight="50dp"
+            android:id="@+id/ButtonRemoveFromCart"
+            android:background="@drawable/border_mypage"
+            android:text="목록 삭제"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:id="@+id/ButtonAllFromCart"
+            android:background="@drawable/border_mypage"
+            android:text="전체 선택"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="                                                                        "
+            android:textSize="15dp"
+            android:layout_gravity="center"
+            android:background="@drawable/blueline" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/exitGoodsCount"
+            android:text="구매 가능한 물품 X개" android:textAlignment="center"
+            android:textColor="@color/dark_red"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/exitTotalPrice"
+            android:padding="2dp"
+            android:text="총가격 : XXXX원" android:textAlignment="center"
+            android:textColor="@color/dark_red"
+            android:textSize="18dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="                                                                        "
+            android:textSize="15dp"
+            android:layout_gravity="center"
+            android:background="@drawable/blueline" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/allGoodsCount"
+            android:text="모든 물품 X개" android:textAlignment="center"
+            android:textColor="@color/basic_text"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/allTotalPrice"
+            android:padding="2dp"
+            android:text="총가격 : XXXX원" android:textAlignment="center"
+            android:textColor="@color/basic_text"
+            android:textSize="18dp"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="                                                                        "
+            android:textSize="15dp"
+            android:layout_gravity="center"
+            android:background="@drawable/blueline" />
+    </LinearLayout>
+</LinearLayout>

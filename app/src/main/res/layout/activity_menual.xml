@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="match_parent" android:layout_gravity="center"
+        android:gravity="center" android:background="@color/white">
+
+        <Button
+            android:id="@+id/yPrevBtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/prebtn"
+            android:onClick="prevBtnClick"/>
+
+        <ViewFlipper
+            android:id="@+id/viewFlipper"
+            android:layout_width="270dp"
+            android:layout_height="500dp" >
+        </ViewFlipper>
+
+        <Button
+            android:id="@+id/yNextBtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/nextbtn"
+            android:onClick="nextBtnClick"/>
+
+</LinearLayout>

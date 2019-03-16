@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="D:\projects\Project Yotta\Android\0227.YottaProject06_final7\app\libs\achartengine-0.7.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="f51933deafdd1ffc8f3a2d7214260f124dd10af6">
+        <dex dex="D:\projects\Project Yotta\Android\0227.YottaProject06_final7\app\build\intermediates\pre-dexed\debug\achartengine-0.7.0_2b9177dfedb58b1f2d2b096ff28542be9068ab0f.jar" />
+    </item>
+    <item
+        jar="D:\projects\Project Yotta\Android\0227.YottaProject06_final7\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="5c5699834e9722f1c288fea2de82725d078ba127">
+        <dex dex="D:\projects\Project Yotta\Android\0227.YottaProject06_final7\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.1.1_dcdefa585e004cf7d3162eb0645a101b7717b2a0.jar" />
+    </item>
+    <item
+        jar="D:\projects\Project Yotta\Android\0227.YottaProject06_final7\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\libs\internal_impl-23.1.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
+        <dex dex="D:\projects\Project Yotta\Android\0227.YottaProject06_final7\app\build\intermediates\pre-dexed\debug\internal_impl-23.1.1_81b8e125d383b29f9bdec8c2a1c2ffea480f4737.jar" />
+    </item>
+    <item
+        jar="D:\projects\Project Yotta\Android\0227.YottaProject06_final7\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
+        <dex dex="D:\projects\Project Yotta\Android\0227.YottaProject06_final7\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.1.1_faa62c03ee988a6d026e7deb1fa78f9e6aeb9d29.jar" />
+    </item>
+    <item
+        jar="D:\projects\Project Yotta\Android\0227.YottaProject06_final7\app\libs\libDaumMapAndroid.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="91c9de067eff6b3e026d21934e91ec45db8cd277">
+        <dex dex="D:\projects\Project Yotta\Android\0227.YottaProject06_final7\app\build\intermediates\pre-dexed\debug\libDaumMapAndroid_31ee73dd6203443b4d7945db573e820e4dae7b54.jar" />
+    </item>
+    <item
+        jar="D:\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.1.1\support-annotations-23.1.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
+        <dex dex="D:\projects\Project Yotta\Android\0227.YottaProject06_final7\app\build\intermediates\pre-dexed\debug\support-annotations-23.1.1_160e21806fe4fcbe2b20c34d1bbde421f69a17ae.jar" />
+    </item>
+    <item
+        jar="D:\projects\Project Yotta\Android\0227.YottaProject06_final7\app\build\intermediates\exploded-aar\com.android.support\design\23.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="379471b2bd17d9737c050345c08e8c7d16589784">
+        <dex dex="D:\projects\Project Yotta\Android\0227.YottaProject06_final7\app\build\intermediates\pre-dexed\debug\com.android.support-design-23.1.1_e315b5ef84925b2b5b84f42e49c24b6e37486dcc.jar" />
+    </item>
+    <item
+        jar="D:\projects\Project Yotta\Android\0227.YottaProject06_final7\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="09c5e804bc67fc0580360043dff067df574a60d4">
+        <dex dex="D:\projects\Project Yotta\Android\0227.YottaProject06_final7\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-23.1.1_ba6bf30aa6e24249a28094e51cc21ef5add614bb.jar" />
+    </item>
+
+</items>

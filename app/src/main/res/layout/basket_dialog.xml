@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ySettingLocationLayout"
+    android:orientation="vertical"
+    android:layout_width="320dp"
+    android:layout_height="430dp"
+    android:textAlignment="center" android:layout_gravity="center">
+    <!-- android:background="@drawable/setmart" -->
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchBasketHeader"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/searchBasketEdit"
+            android:layout_marginLeft="5dp"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:singleLine="true"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/searchBasketBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/btnsearch"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="반경 설정" android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:textSize="15dp"
+            android:textColor="@color/black"/>
+
+        <RadioGroup
+            android:id="@+id/rGrpDistance"
+            android:orientation="horizontal"
+            android:checkedButton="@+id/radioDistance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal">
+
+            <RadioButton
+                android:id="@+id/rBtn1km"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1km"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:checked="true"/>
+            <RadioButton
+                android:id="@+id/rBtn3km"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3km"
+                android:textSize="15dp"
+                android:textColor="@color/black"/>
+            <RadioButton
+                android:id="@+id/rBtn5km"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5km"
+                android:textSize="15dp"
+                android:textColor="@color/black"/>
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/searchBasketList"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:padding="10dp"
+        android:dividerHeight="1dp"
+        android:divider="@color/basic" />
+
+    <LinearLayout
+        android:layout_marginTop="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:layout_gravity="center"
+            android:layout_width="70dp" android:layout_height="30dp"
+            android:id="@+id/searchBasketNo"
+            android:text="취소" android:textColor="@color/basic_text"
+            android:textSize="13dp"
+            android:background="@drawable/border_info"/>
+
+        <Button
+            android:layout_gravity="center"
+            android:layout_width="70dp" android:layout_height="30dp"
+            android:layout_marginLeft="50dp"
+            android:id="@+id/searchBasketYes"
+            android:text="설정" android:textColor="@color/basic_text"
+            android:textSize="13dp"
+            android:background="@drawable/border_info"/>
+    </LinearLayout>
+</LinearLayout>

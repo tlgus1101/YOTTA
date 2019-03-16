@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/border_info">
+
+    <ImageView
+        android:id="@+id/yInfoTopLayout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        />
+    <!-- android:background="@drawable/info_bar" -->
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/ImageView"
+                android:layout_width="150dp" android:layout_height="150dp"
+                android:layout_margin="10dp" android:padding="5dp"
+                android:background="@drawable/border_infoimage"/>
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="35dp"
+                    android:id="@+id/yFavorBtn"
+                    android:onClick="FavorBtnOnClick"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/favorbtn"/>
+                <Button
+                    android:id="@+id/locationBtn"
+                    android:layout_width="40dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/location" />
+
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="35dp"
+                    android:id="@+id/yAddBasketBtn"
+                    android:layout_gravity="center"
+                    android:background="@drawable/basket"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:padding="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="name"
+                android:textSize="18dp"
+                android:textAlignment="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/locate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="위치"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/mart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="mart"
+                android:textSize="17dp"
+                android:textColor="#000000" />
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="가격: "
+                    android:textSize="17dp"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/won"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="XXXXX"
+                    android:textSize="21dp"
+                    android:textColor="@color/navy" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" 원"
+                    android:textSize="18dp"
+                    android:textColor="@color/black" />
+
+            </LinearLayout> <!--가격 끝-->
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="35dp"
+                    android:onClick="ExistingInsertOnClick"
+                    android:layout_gravity="center"
+                    android:text="가격등록"
+                    android:background="@drawable/border_info"/>
+
+            </LinearLayout>
+        </LinearLayout> /<!-- 정보 끝-->/
+    </LinearLayout> <!-- 이미지+정보 끝-->/
+
+
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="                                               "
+        android:textSize="30dp"
+        android:layout_gravity="center"
+        android:background="@drawable/blueline" />
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:onClick="btnInfoOnClick">
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/money1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="XXXX" android:textSize="20dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/dark_red" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="원을 "
+                    android:textSize="16dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/person1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="XX" android:textSize="21dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/green" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="명이 등록"
+                    android:textSize="17dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:id="@+id/yDate1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/purple" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+                <TextView
+                    android:id="@+id/money2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="XXXX" android:textSize="18dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/dark_red" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="원을 "
+                    android:textSize="15dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/person2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="XX" android:textSize="19dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/green" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="명이 등록"
+                    android:textSize="16dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:id="@+id/yDate2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/light_purple" />
+
+            </LinearLayout>
+        </LinearLayout>
+        <!--몇명이 등록했는지 여부 끝 -->
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="                                                            "
+        android:textSize="25dp"
+        android:layout_gravity="center"
+        android:background="@drawable/blueline" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="vertical"
+        android:id="@+id/llBody">
+    </LinearLayout>  <!--그래프 끝-->/
+
+</LinearLayout>

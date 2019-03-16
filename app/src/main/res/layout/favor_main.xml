@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/viewflipper">
+        <TextView
+            android:id="@+id/yViewFavorText"
+            android:layout_width="290dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="25dp"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        <!-- android:background="@drawable/title3" -->
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/viewflipper_up"
+            android:layout_gravity="bottom|right"
+            android:id="@+id/VFC"
+            android:onClick="ViewFlipperClose"/>
+        <!-- android:background="@drawable/viewfilpper_open" -->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@color/basic_light">
+
+        <ViewFlipper
+            android:id="@+id/flipper"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            android:layout_width="340dp"
+            android:layout_height="170dp"
+            android:autoStart="true">
+
+            <ImageView
+                android:id="@+id/img01"
+                android:onClick="FavorImgOnClick01"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/view1"/>
+
+            <ImageView
+                android:id="@+id/img02"
+                android:onClick="FavorImgOnClick02"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/view2"/>
+
+            <ImageView
+                android:id="@+id/img03"
+                android:onClick="FavorImgOnClick03"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/view3"/>
+
+            <ImageView
+                android:id="@+id/img04"
+                android:onClick="FavorImgOnClick04"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/view4"/>
+
+        </ViewFlipper>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="1dp"
+            android:id="@+id/must"
+            android:background="@drawable/favor"
+            android:onClick="Must"
+            android:text="추천" android:textSize="15dp"/>
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="1dp"
+            android:id="@+id/hot"
+            android:background="@drawable/favor2"
+            android:onClick="Hot"
+            android:text="인기" android:textSize="15dp"/>
+
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="1dp"
+            android:id="@+id/favor1"
+            android:onClick="OnClicktopList1"
+            android:background="@drawable/favor2"
+            android:text="탭1" android:textSize="15dp"/>
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="1dp"
+            android:id="@+id/favor2"
+            android:onClick="OnClicktopList2"
+            android:background="@drawable/favor2"
+            android:text="탭2" android:textSize="15dp"/>
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:id="@+id/favor3"
+            android:onClick="OnClicktopList3"
+            android:background="@drawable/favor2"
+            android:text="탭3" android:textSize="15dp"/>
+
+        <Button
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/erase"
+            android:onClick="btnErase"
+            android:background="@drawable/remove"/>
+        <!--android:text="비우기" android:textSize="10dp"-->
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/gridView1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:padding="10dp"
+        android:horizontalSpacing="5dp"
+        android:verticalSpacing="10dp"
+        android:numColumns="3"
+        android:background="@drawable/border_favor"/>
+</LinearLayout>

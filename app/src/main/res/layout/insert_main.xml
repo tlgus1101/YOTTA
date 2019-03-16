@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/yInsertLayout"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:layout_width="350dp"
+    android:layout_height="360dp">
+    <!-- 원래 layout_height가 400dp였음.-->
+    <!-- android:background="@drawable/register_text" -->
+
+    <!--<TextView
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="가격 등록"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:textSize="30dp"/> -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="180dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="85dp"
+        android:layout_marginBottom="20dp">
+
+        <FrameLayout
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_gravity="center"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:onClick="btnSelectOnClick"
+                android:text=" "
+                android:id="@+id/btnselect"/>
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:onClick="ReImageOnClick"
+                android:layout_gravity="center"
+                android:layout_width="120dp"
+                android:layout_height="140dp"
+                android:background="@drawable/setimage2"
+                />
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/btn_select_gallery"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="갤러리에서 올리기"
+            android:onClick="btnGalleryOnclick"
+            android:visibility="gone"/>
+        <Button
+            android:id="@+id/btn_take_camera"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="찍어서 올리기"
+            android:onClick="btnCameraOnClcik"
+            android:visibility="gone"/>
+
+
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp">
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center|top"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:padding="5dp"
+                android:text="카테고리 선택"
+                android:textColor="@color/black"
+                android:onClick="BtnCategoryOnClick"
+                android:background="@drawable/border"
+                android:id="@+id/btnCategroy"/>
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_gravity="left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="제품 : "
+                    android:textSize="15dp"
+                    android:textColor="@color/black"/>
+                <EditText
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:id = "@+id/text_name"
+                    android:imeOptions="actionNext"
+                    android:singleLine="true"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <EditText
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_ea"
+                    android:singleLine="true"
+                    android:maxLength="5"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:digits="0123456789"
+                    android:textColor="@color/black"/>
+                <Button
+                    android:id="@+id/yMeasureText"
+                    android:onClick="MeasureOnClick"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:text="개 입"
+                    android:textSize="15dp"
+                    android:background="@color/basic_light"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_gravity="left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="가격 : "
+                    android:textSize="15dp"
+                    android:textColor="@color/black"/>
+                <EditText
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_price"
+                    android:imeOptions="actionDone"
+                    android:singleLine="true"
+                    android:inputType="number"
+                    android:maxLength="8"
+                    android:digits="0123456789"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center">
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:text="취소"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/border"
+            android:onClick="btnFinish" />
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:text="확인"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:background="@drawable/border"
+            android:id="@+id/button"
+            android:onClick="btnInsetOnClick"/>
+
+    </LinearLayout>
+
+</LinearLayout>

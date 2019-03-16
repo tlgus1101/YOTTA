@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content" android:layout_gravity="center"
+    android:id="@+id/yMypageLayout">
+    <!--  android:background="@drawable/mypage2" -->
+
+
+    <LinearLayout
+        android:layout_marginTop="160dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/yNotify"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_marginRight="30dp"
+            android:text="앱 정보"
+            android:background="@drawable/border_mypage"
+            android:onClick="notifyClick" />
+
+        <Button
+            android:id="@+id/ySetting_mart"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:text="내마트 설정"
+            android:background="@drawable/border_mypage"
+            android:onClick="martSettings"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/yAppMenual"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:text="사용설명서"
+            android:background="@drawable/border_mypage"
+            android:onClick="menualClick"/>
+
+        <Button
+            android:id="@+id/yMypagebtn"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="20dp"
+            android:text="FAQ"
+            android:background="@drawable/border_mypage"
+            android:onClick="mypageClick"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/yInitailization"
+        android:layout_marginTop="20dp"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:text="초기화"
+        android:background="@drawable/border_mypage"
+        android:layout_gravity="center"
+        android:onClick="InitailizeSavedInfo"/>
+
+</LinearLayout>

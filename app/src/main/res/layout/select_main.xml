@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.leehs.yottaproject06.ShoppingCart.SelectActivity;"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/basic_point">
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:background="@drawable/category2"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_gravity="center"
+            android:text="카 테 고 리" android:textSize="20dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:orientation="vertical" android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp" android:paddingRight="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="left"
+            android:background="@color/basic_deep"
+            android:text="식품" android:textSize="15dp"
+            android:textColor="@color/white"/>
+
+        <ExpandableListView
+            android:id="@+id/category_list"
+            android:layout_width="fill_parent"
+            android:groupIndicator="@null"
+            android:layout_height="match_parent"
+            android:background="@drawable/border_category"
+            android:divider="@color/basic_dark_dark"
+            android:childDivider="@color/basic_dark"
+            android:dividerHeight="1dp"/>
+
+    </LinearLayout>
+</LinearLayout>
